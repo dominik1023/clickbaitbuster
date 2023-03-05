@@ -1,0 +1,14 @@
+{
+  "name": "ClickBaitBuster",
+  "description": "An extension that helps users fight clickbait on YouTube.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "options_page": "setup.html",
+  "permissions": ["storage", "tabs", "activeTab"]
+}
